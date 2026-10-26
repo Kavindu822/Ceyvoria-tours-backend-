@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Signature",
+    "slug": "signature",
+    "description": "The island's most memorable moments, thoughtfully connected.",
+    "image": "/images/sander-traa-bfdshihd5y4-unsplash.webp"
+  },
+  {
+    "name": "Luxury",
+    "slug": "luxury",
+    "description": "Distinctive stays, considered details and travel at your pace.",
+    "image": "/images/maris-silis-mbfjfqaceak-unsplash.webp"
+  },
+  {
+    "name": "Honeymoon",
+    "slug": "honeymoon",
+    "description": "Romantic hideaways and time made for two.",
+    "image": "/images/andrei-alekseev-vvltlbkjmwq-unsplash.webp"
+  },
+  {
+    "name": "Family",
+    "slug": "family",
+    "description": "Immersive discoveries with room for all generations.",
+    "image": "/images/birendra-padmaperuma-njelnf-q4uy-unsplash.webp"
+  },
+  {
+    "name": "Wildlife",
+    "slug": "wildlife",
+    "description": "Natural habitats, expert-led encounters and quieter moments.",
+    "image": "/images/tom-paisley-v2zeizifb44-unsplash.webp"
+  },
+  {
+    "name": "Culture",
+    "slug": "culture",
+    "description": "Ancient cities, everyday traditions and extraordinary stories.",
+    "image": "/images/dambulla-cave-temple.webp"
+  },
+  {
+    "name": "Adventure",
+    "slug": "adventure",
+    "description": "Walk, hike and discover the island from a fresh perspective.",
+    "image": "/images/etienne-boulanger-c5yfbvmwxc8-unsplash.webp"
+  },
+  {
+    "name": "Coastal",
+    "slug": "coastal",
+    "description": "From golden sunsets to breezy east-coast hideaways.",
+    "image": "/images/mirissa-beach-sri-lanka.webp"
+  },
+  {
+    "name": "Wellness",
+    "slug": "wellness",
+    "description": "A gentler pace and time to unwind.",
+    "image": "/images/maris-silis-mbfjfqaceak-unsplash.webp"
+  }
+]

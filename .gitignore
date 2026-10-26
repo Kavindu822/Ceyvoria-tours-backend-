@@ -1,0 +1,47 @@
+# ==============================================================================
+# CEYVORIA TOURS — BACKEND (.NET) GITIGNORE
+# ==============================================================================
+
+# 1. Environment and Secrets (NEVER commit credentials or secrets)
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+**/appsettings.Development.json
+**/secrets/
+*.pem
+*.key
+*.pfx
+
+# 2. .NET Build outputs and binaries
+[Bb]in/
+[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
+*.dll
+*.pdb
+*.exe
+
+# 3. Visual Studio / Rider / IDE cache
+.vs/
+**/.vs/
+.idea/
+**/.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# 4. Logs and diagnostics
+*.log
+[Ll]og/
+[Ll]ogs/
+
+# 5. OS files
+.DS_Store
+Thumbs.db
+desktop.ini

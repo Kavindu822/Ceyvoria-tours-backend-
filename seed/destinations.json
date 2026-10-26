@@ -1,0 +1,664 @@
+[
+  {
+    "name": "Sigiriya Rock Fortress",
+    "slug": "sigiriya-rock-fortress",
+    "region": "Cultural Triangle",
+    "location": "Dambulla / Matale",
+    "description": "Iconic fifth-century rock citadel, landscaped water gardens, frescoes and sweeping jungle panoramas.",
+    "activities": [
+      "Climb the rock",
+      "explore the gardens",
+      "visit the museum",
+      "enjoy sunrise viewpoints"
+    ],
+    "notes": "Early morning; allow 2–3 hours.",
+    "image": "/images/sander-traa-bfdshihd5y4-unsplash.webp",
+    "displayName": "Sigiriya"
+  },
+  {
+    "name": "Pidurangala Rock",
+    "slug": "pidurangala-rock",
+    "region": "Cultural Triangle",
+    "location": "Sigiriya",
+    "description": "Rocky summit with a remarkable view of Sigiriya rising above the forest.",
+    "activities": [
+      "Sunrise hike",
+      "landscape photography",
+      "visit the ancient cave shrine"
+    ],
+    "notes": "Sunrise or sunset; steep rocky final section.",
+    "image": "/images/sander-traa-bfdshihd5y4-unsplash.webp",
+    "displayName": "Pidurangala Rock"
+  },
+  {
+    "name": "Dambulla Cave Temple",
+    "slug": "dambulla-cave-temple",
+    "region": "Cultural Triangle",
+    "location": "Dambulla",
+    "description": "Historic cave sanctuary decorated with Buddhist murals and statues.",
+    "activities": [
+      "Explore the five caves",
+      "learn about religious art",
+      "admire hilltop views"
+    ],
+    "notes": "Morning; dress modestly and remove shoes.",
+    "image": "/images/dambulla-cave-temple.webp",
+    "displayName": "Dambulla Cave Temple"
+  },
+  {
+    "name": "Polonnaruwa Ancient City",
+    "slug": "polonnaruwa-ancient-city",
+    "region": "Cultural Triangle",
+    "location": "Polonnaruwa",
+    "description": "Medieval royal capital with monumental ruins, carved Buddha figures and ancient reservoirs.",
+    "activities": [
+      "Cycle the archaeological park",
+      "see Gal Vihara",
+      "explore royal palace remains"
+    ],
+    "notes": "Start early; allow half to full day.",
+    "image": "/images/polonnaruwa.webp",
+    "displayName": "Polonnaruwa Ancient City"
+  },
+  {
+    "name": "Anuradhapura Sacred City",
+    "slug": "anuradhapura-sacred-city",
+    "region": "Cultural Triangle",
+    "location": "Anuradhapura",
+    "description": "Ancient royal city famed for enormous stupas, monasteries and the sacred Sri Maha Bodhi.",
+    "activities": [
+      "Visit Ruwanwelisaya",
+      "explore ruins by bicycle",
+      "learn about Buddhist heritage"
+    ],
+    "notes": "Full day; carry water and wear temple-appropriate clothing.",
+    "image": "/images/ruwanwelisaya-anuradhapura.webp",
+    "displayName": "Anuradhapura Sacred City"
+  },
+  {
+    "name": "Mihintale",
+    "slug": "mihintale",
+    "region": "Cultural Triangle",
+    "location": "Near Anuradhapura",
+    "description": "Sacred hill complex associated with the introduction of Buddhism to Sri Lanka.",
+    "activities": [
+      "Climb the stairways",
+      "visit shrines",
+      "enjoy panoramic views"
+    ],
+    "notes": "Early morning or late afternoon.",
+    "image": "/images/ruwanwelisaya-anuradhapura.webp",
+    "displayName": "Mihintale"
+  },
+  {
+    "name": "Aukana Buddha Statue",
+    "slug": "aukana-buddha-statue",
+    "region": "Cultural Triangle",
+    "location": "Kekirawa",
+    "description": "Impressive ancient standing Buddha carved from a granite rock face.",
+    "activities": [
+      "View the sculpture",
+      "learn about ancient stone craftsmanship"
+    ],
+    "notes": "Combine with Anuradhapura or Dambulla.",
+    "image": "/images/julie-ricard-rmfx5bxhqcg-unsplash.webp",
+    "displayName": "Aukana Buddha Statue"
+  },
+  {
+    "name": "Kandy & Temple of the Tooth",
+    "slug": "kandy-temple-of-the-tooth",
+    "region": "Hill Country",
+    "location": "Kandy",
+    "description": "Lakeside hill capital known for Buddhist heritage, markets and cultural performances.",
+    "activities": [
+      "Visit the Temple of the Tooth",
+      "walk around the lake",
+      "watch traditional dance"
+    ],
+    "notes": "1–2 days; observe temple etiquette.",
+    "image": "/images/chathura-anuradha-subasinghe-40uqme9zq8g-unsplash.webp",
+    "displayName": "Kandy"
+  },
+  {
+    "name": "Peradeniya Royal Botanical Gardens",
+    "slug": "peradeniya-royal-botanical-gardens",
+    "region": "Hill Country",
+    "location": "Peradeniya",
+    "description": "Expansive botanical gardens with orchids, palms and remarkable tropical trees.",
+    "activities": [
+      "Garden walks",
+      "plant photography",
+      "guided botany tours"
+    ],
+    "notes": "Half day; mornings are pleasant.",
+    "image": "/images/liptons-seat-haputale.webp",
+    "displayName": "Peradeniya Royal Botanical Gardens"
+  },
+  {
+    "name": "Ella & Nine Arch Bridge",
+    "slug": "ella-nine-arch-bridge",
+    "region": "Hill Country",
+    "location": "Ella",
+    "description": "Mountain town with tea landscapes, a striking railway viaduct and scenic trails.",
+    "activities": [
+      "Photograph Nine Arch Bridge",
+      "hike Little Adam’s Peak",
+      "explore tea estates"
+    ],
+    "notes": "2 days; check train schedules locally.",
+    "image": "/images/anton-lecock-vwgvoihtfpu-unsplash.webp",
+    "displayName": "Ella"
+  },
+  {
+    "name": "Ella Rock",
+    "slug": "ella-rock",
+    "region": "Hill Country",
+    "location": "Ella",
+    "description": "Longer hill hike offering dramatic views across valleys and mountain ridges.",
+    "activities": [
+      "Guided hiking",
+      "birdwatching",
+      "sunrise photography"
+    ],
+    "notes": "Early start; trails can be confusing.",
+    "image": "/images/tom-nicholson-ptw2xsseqxm-unsplash.webp",
+    "displayName": "Ella Rock"
+  },
+  {
+    "name": "Ravana Falls",
+    "slug": "ravana-falls",
+    "region": "Hill Country",
+    "location": "Ella / Wellawaya road",
+    "description": "Picturesque roadside waterfall cascading through lush rock formations.",
+    "activities": [
+      "View and photograph the falls",
+      "combine with an Ella excursion"
+    ],
+    "notes": "Avoid slippery rocks and strong currents.",
+    "image": "/images/gerandigini-ella-waterfall.webp",
+    "displayName": "Ravana Falls"
+  },
+  {
+    "name": "Nuwara Eliya",
+    "slug": "nuwara-eliya",
+    "region": "Hill Country",
+    "location": "Central Highlands",
+    "description": "Cool-climate hill town surrounded by tea plantations and colonial-era architecture.",
+    "activities": [
+      "Tea factory tours",
+      "Victoria Park",
+      "Gregory Lake",
+      "scenic drives"
+    ],
+    "notes": "1–2 days; pack a jacket.",
+    "image": "/images/hendrik-cornelissen-jptt-sau034-unsplash.webp",
+    "displayName": "Nuwara Eliya"
+  },
+  {
+    "name": "Horton Plains & World’s End",
+    "slug": "horton-plains-worlds-end",
+    "region": "Hill Country",
+    "location": "Near Nuwara Eliya",
+    "description": "High-altitude grassland and cloud forest with a famous escarpment viewpoint.",
+    "activities": [
+      "Early morning loop hike",
+      "visit Baker’s Falls",
+      "wildlife observation"
+    ],
+    "notes": "Begin at dawn before cloud builds.",
+    "image": "/images/tom-nicholson-ptw2xsseqxm-unsplash.webp",
+    "displayName": "Horton Plains"
+  },
+  {
+    "name": "Adam’s Peak / Sri Pada",
+    "slug": "adams-peak-sri-pada",
+    "region": "Hill Country",
+    "location": "Nallathanniya",
+    "description": "Sacred pilgrimage mountain with a challenging staircase climb and sunrise views.",
+    "activities": [
+      "Pilgrimage ascent",
+      "sunrise photography",
+      "mountain scenery"
+    ],
+    "notes": "Main pilgrimage season typically Dec–May; check conditions.",
+    "image": "/images/tom-nicholson-ptw2xsseqxm-unsplash.webp",
+    "displayName": "Adam’s Peak / Sri Pada"
+  },
+  {
+    "name": "Knuckles Mountain Range",
+    "slug": "knuckles-mountain-range",
+    "region": "Hill Country",
+    "location": "Central Province",
+    "description": "Rugged mountain wilderness with forests, remote villages and varied hiking routes.",
+    "activities": [
+      "Guided trekking",
+      "village experiences",
+      "nature photography"
+    ],
+    "notes": "Hire a knowledgeable local guide.",
+    "image": "/images/tom-nicholson-ptw2xsseqxm-unsplash.webp",
+    "displayName": "Knuckles Mountain Range"
+  },
+  {
+    "name": "Diyaluma Falls",
+    "slug": "diyaluma-falls",
+    "region": "Hill Country",
+    "location": "Near Koslanda",
+    "description": "Tall waterfall and scenic escarpment with upper cascade viewpoints.",
+    "activities": [
+      "Guided waterfall trek",
+      "landscape photography"
+    ],
+    "notes": "Water levels and rock safety vary.",
+    "image": "/images/gerandigini-ella-waterfall.webp",
+    "displayName": "Diyaluma Falls"
+  },
+  {
+    "name": "Bambarakanda Falls",
+    "slug": "bambarakanda-falls",
+    "region": "Hill Country",
+    "location": "Kalupahana",
+    "description": "Sri Lanka’s tallest waterfall, surrounded by pine forest and mountain scenery.",
+    "activities": [
+      "Viewpoint walks",
+      "waterfall photography",
+      "nature excursions"
+    ],
+    "notes": "Best after adequate rainfall; avoid dangerous pools.",
+    "image": "/images/gerandigini-ella-waterfall.webp",
+    "displayName": "Bambarakanda Falls"
+  },
+  {
+    "name": "Haputale & Lipton’s Seat",
+    "slug": "haputale-liptons-seat",
+    "region": "Hill Country",
+    "location": "Haputale",
+    "description": "Tea-country ridge offering wide views and plantation landscapes.",
+    "activities": [
+      "Sunrise viewpoint",
+      "tea estate visits",
+      "scenic drives"
+    ],
+    "notes": "Morning is best for clear views.",
+    "image": "/images/liptons-seat-haputale.webp",
+    "displayName": "Haputale"
+  },
+  {
+    "name": "Galle Fort",
+    "slug": "galle-fort",
+    "region": "South & West Coast",
+    "location": "Galle",
+    "description": "Historic fortified coastal town with bastions, heritage streets and ocean-facing ramparts.",
+    "activities": [
+      "Walking tour",
+      "lighthouse photography",
+      "cafés",
+      "museums",
+      "sunset on ramparts"
+    ],
+    "notes": "Half to full day.",
+    "image": "/images/galle-fort.webp",
+    "displayName": "Galle Fort"
+  },
+  {
+    "name": "Unawatuna & Jungle Beach",
+    "slug": "unawatuna-jungle-beach",
+    "region": "South & West Coast",
+    "location": "Near Galle",
+    "description": "Popular sheltered beach area with coastal cafés and nearby coves.",
+    "activities": [
+      "Beach relaxation",
+      "snorkeling when safe",
+      "sunset walks"
+    ],
+    "notes": "Check sea conditions and lifeguard guidance.",
+    "image": "/images/unawatuna-beach.webp",
+    "displayName": "Unawatuna"
+  },
+  {
+    "name": "Mirissa",
+    "slug": "mirissa",
+    "region": "South & West Coast",
+    "location": "Southern Coast",
+    "description": "Palm-fringed beach town known for ocean views and seasonal whale-watching trips.",
+    "activities": [
+      "Beach walks",
+      "whale watching with responsible operators",
+      "viewpoints"
+    ],
+    "notes": "Marine trips depend on weather and season.",
+    "image": "/images/mirissa-beach-sri-lanka.webp",
+    "displayName": "Mirissa"
+  },
+  {
+    "name": "Weligama",
+    "slug": "weligama",
+    "region": "South & West Coast",
+    "location": "Matara District",
+    "description": "Long sandy bay widely used for beginner surf lessons.",
+    "activities": [
+      "Beginner surfing",
+      "seafood dining",
+      "coastal photography"
+    ],
+    "notes": "Choose certified surf instructors.",
+    "image": "/images/weligama.webp",
+    "displayName": "Weligama"
+  },
+  {
+    "name": "Hikkaduwa",
+    "slug": "hikkaduwa",
+    "region": "South & West Coast",
+    "location": "Southwest Coast",
+    "description": "Lively beach destination with reef areas, surf breaks and restaurants.",
+    "activities": [
+      "Snorkeling",
+      "surfing",
+      "glass-bottom boat trips",
+      "beach leisure"
+    ],
+    "notes": "Do not touch coral or feed turtles.",
+    "image": "/images/hikkaduwa.webp",
+    "displayName": "Hikkaduwa"
+  },
+  {
+    "name": "Bentota",
+    "slug": "bentota",
+    "region": "South & West Coast",
+    "location": "Southwest Coast",
+    "description": "Resort beach and river estuary with water-based excursions.",
+    "activities": [
+      "Boat rides",
+      "watersports",
+      "beach relaxation",
+      "river mangrove tours"
+    ],
+    "notes": "Water activities depend on sea and river conditions.",
+    "image": "/images/andrei-alekseev-vvltlbkjmwq-unsplash.webp",
+    "displayName": "Bentota"
+  },
+  {
+    "name": "Tangalle & Rekawa",
+    "slug": "tangalle-rekawa",
+    "region": "South & West Coast",
+    "location": "Southern Coast",
+    "description": "Quieter beaches and coastal landscapes, with important sea turtle nesting areas nearby.",
+    "activities": [
+      "Beach walks",
+      "responsible turtle-watching with approved guides"
+    ],
+    "notes": "Avoid flash photography around nesting turtles.",
+    "image": "/images/andrei-alekseev-vvltlbkjmwq-unsplash.webp",
+    "displayName": "Tangalle"
+  },
+  {
+    "name": "Negombo",
+    "slug": "negombo",
+    "region": "South & West Coast",
+    "location": "West Coast",
+    "description": "Fishing town close to the international airport with canals and a lively market.",
+    "activities": [
+      "Lagoon boat tours",
+      "fish market visit",
+      "beach sunset"
+    ],
+    "notes": "Convenient first or final overnight stop.",
+    "image": "/images/daniel-klein-qx8-d5dghrs-unsplash.webp",
+    "displayName": "Negombo"
+  },
+  {
+    "name": "Trincomalee & Nilaveli",
+    "slug": "trincomalee-nilaveli",
+    "region": "East & North Coast",
+    "location": "Northeast Coast",
+    "description": "Historic harbour region with white-sand beaches and nearby marine excursions.",
+    "activities": [
+      "Visit Koneswaram Temple",
+      "beach days",
+      "boat excursions"
+    ],
+    "notes": "Often most suitable during the east-coast dry season.",
+    "image": "/images/sebastian-latorre-qi6awfds7py-unsplash.webp",
+    "displayName": "Trincomalee"
+  },
+  {
+    "name": "Pigeon Island National Park",
+    "slug": "pigeon-island-national-park",
+    "region": "East & North Coast",
+    "location": "Off Nilaveli",
+    "description": "Protected marine environment noted for reefs and reef-associated wildlife.",
+    "activities": [
+      "Guided snorkeling",
+      "marine-life viewing"
+    ],
+    "notes": "Use reef-safe practices; trips weather-dependent.",
+    "image": "/images/sebastian-latorre-qi6awfds7py-unsplash.webp",
+    "displayName": "Pigeon Island"
+  },
+  {
+    "name": "Pasikudah",
+    "slug": "pasikudah",
+    "region": "East & North Coast",
+    "location": "Batticaloa District",
+    "description": "East-coast bay known for its relatively shallow shoreline and resort atmosphere.",
+    "activities": [
+      "Swimming where permitted",
+      "beach relaxation",
+      "kayaking"
+    ],
+    "notes": "Always assess currents and local safety notices.",
+    "image": "/images/andrei-alekseev-vvltlbkjmwq-unsplash.webp",
+    "displayName": "Pasikudah"
+  },
+  {
+    "name": "Arugam Bay",
+    "slug": "arugam-bay",
+    "region": "East & North Coast",
+    "location": "Southeast Coast",
+    "description": "Internationally known surf destination with a relaxed beach-town atmosphere.",
+    "activities": [
+      "Surfing",
+      "lagoon excursions",
+      "nearby wildlife viewing"
+    ],
+    "notes": "Surf season generally strongest around May–September.",
+    "image": "/images/weligama.webp",
+    "displayName": "Arugam Bay"
+  },
+  {
+    "name": "Jaffna & Nallur Kandaswamy Temple",
+    "slug": "jaffna-nallur-kandaswamy-temple",
+    "region": "East & North Coast",
+    "location": "Northern Peninsula",
+    "description": "Distinctive northern cultural centre with Tamil heritage, temples and regional cuisine.",
+    "activities": [
+      "Temple visits",
+      "local food tours",
+      "heritage walks",
+      "island excursions"
+    ],
+    "notes": "Dress respectfully at religious sites.",
+    "image": "/images/youhana-nassif-ctz5wzqo-ss-unsplash.webp",
+    "displayName": "Jaffna"
+  },
+  {
+    "name": "Delft Island",
+    "slug": "delft-island",
+    "region": "East & North Coast",
+    "location": "Off Jaffna Peninsula",
+    "description": "Remote island with coral-stone walls, coastal scenery and free-roaming horses.",
+    "activities": [
+      "Island sightseeing",
+      "heritage exploration",
+      "photography"
+    ],
+    "notes": "Ferry services and conditions can change.",
+    "image": "/images/sebastian-latorre-qi6awfds7py-unsplash.webp",
+    "displayName": "Delft Island"
+  },
+  {
+    "name": "Mannar & Talaimannar",
+    "slug": "mannar-talaimannar",
+    "region": "East & North Coast",
+    "location": "Northwest Coast",
+    "description": "Quiet coastal region with historic landmarks, bird habitats and distinctive landscapes.",
+    "activities": [
+      "Birdwatching",
+      "visit Mannar Fort",
+      "explore coastal viewpoints"
+    ],
+    "notes": "Plan transport and check seasonal bird activity.",
+    "image": "/images/devinuwara-matara.webp",
+    "displayName": "Mannar"
+  },
+  {
+    "name": "Yala National Park",
+    "slug": "yala-national-park",
+    "region": "Wildlife & Nature",
+    "location": "Southeast Sri Lanka",
+    "description": "Dry-zone wilderness renowned for leopards, elephants, crocodiles and birds.",
+    "activities": [
+      "Guided jeep safari",
+      "wildlife photography",
+      "birdwatching"
+    ],
+    "notes": "Dawn or afternoon; sightings are never guaranteed.",
+    "image": "/images/yala-national-park.webp",
+    "displayName": "Yala"
+  },
+  {
+    "name": "Udawalawe National Park",
+    "slug": "udawalawe-national-park",
+    "region": "Wildlife & Nature",
+    "location": "Sabaragamuwa / Uva",
+    "description": "Open grasslands and reservoirs that provide excellent opportunities to observe elephants.",
+    "activities": [
+      "Jeep safari",
+      "elephant observation",
+      "nature photography"
+    ],
+    "notes": "Morning or late afternoon.",
+    "image": "/images/tom-paisley-v2zeizifb44-unsplash.webp",
+    "displayName": "Udawalawe"
+  },
+  {
+    "name": "Minneriya National Park",
+    "slug": "minneriya-national-park",
+    "region": "Wildlife & Nature",
+    "location": "Near Habarana",
+    "description": "Reservoir-side park famous for seasonal elephant gatherings.",
+    "activities": [
+      "Jeep safari",
+      "elephant and bird photography"
+    ],
+    "notes": "Seasonal wildlife movements vary by rainfall.",
+    "image": "/images/tissamaharama.webp",
+    "displayName": "Minneriya"
+  },
+  {
+    "name": "Wilpattu National Park",
+    "slug": "wilpattu-national-park",
+    "region": "Wildlife & Nature",
+    "location": "Northwest Sri Lanka",
+    "description": "Large forest-and-lake national park known for natural villu lakes and diverse wildlife.",
+    "activities": [
+      "Guided safari",
+      "birdwatching",
+      "wildlife photography"
+    ],
+    "notes": "Allow half or full day.",
+    "image": "/images/wilpattu-national-park.webp",
+    "displayName": "Wilpattu"
+  },
+  {
+    "name": "Sinharaja Rainforest",
+    "slug": "sinharaja-rainforest",
+    "region": "Wildlife & Nature",
+    "location": "Southwest Sri Lanka",
+    "description": "UNESCO-listed tropical rainforest rich in endemic birds, plants and biodiversity.",
+    "activities": [
+      "Guided forest walks",
+      "birdwatching",
+      "ecological interpretation"
+    ],
+    "notes": "Bring rain protection and leech socks.",
+    "image": "/images/etienne-boulanger-c5yfbvmwxc8-unsplash.webp",
+    "displayName": "Sinharaja Rainforest"
+  },
+  {
+    "name": "Bundala National Park",
+    "slug": "bundala-national-park",
+    "region": "Wildlife & Nature",
+    "location": "Hambantota District",
+    "description": "Wetland habitats important for migratory waterbirds and other wildlife.",
+    "activities": [
+      "Birdwatching safari",
+      "wetland photography"
+    ],
+    "notes": "Best with an experienced naturalist.",
+    "image": "/images/tissamaharama.webp",
+    "displayName": "Bundala"
+  },
+  {
+    "name": "Kitulgala",
+    "slug": "kitulgala",
+    "region": "Wildlife & Nature",
+    "location": "Sabaragamuwa",
+    "description": "Rainforest river destination popular for outdoor adventure and river activities.",
+    "activities": [
+      "White-water rafting",
+      "canyoning",
+      "rainforest walks"
+    ],
+    "notes": "Use qualified operators; conditions vary after rain.",
+    "image": "/images/oleks-film-pitray3fpjs-unsplash.webp",
+    "displayName": "Kitulgala"
+  },
+  {
+    "name": "Colombo",
+    "slug": "colombo",
+    "region": "City & Culture",
+    "location": "Western Province",
+    "description": "Sri Lanka’s commercial capital blends colonial landmarks, temples, museums and modern dining.",
+    "activities": [
+      "Gangaramaya Temple",
+      "Pettah market",
+      "museums",
+      "food tours",
+      "Galle Face sunset"
+    ],
+    "notes": "1–2 days; allow for city traffic.",
+    "image": "/images/tharoushan-kandarajah-ktdxt7dyfvm-unsplash.webp",
+    "displayName": "Colombo"
+  },
+  {
+    "name": "Ambalangoda",
+    "slug": "ambalangoda",
+    "region": "City & Culture",
+    "location": "Southern Coast",
+    "description": "Coastal town known for traditional mask carving and performing-arts heritage.",
+    "activities": [
+      "Mask museum",
+      "craft workshops",
+      "cultural shopping"
+    ],
+    "notes": "Easy stop between Colombo and Galle.",
+    "image": "/images/thilina-alagiyawanna-alyixuhijqu-unsplash.webp",
+    "displayName": "Ambalangoda"
+  },
+  {
+    "name": "Kalpitiya",
+    "slug": "kalpitiya",
+    "region": "City & Culture",
+    "location": "Northwest Coast",
+    "description": "Peninsula with lagoons, sandbars and seasonal marine experiences.",
+    "activities": [
+      "Kitesurfing",
+      "lagoon tours",
+      "dolphin-watching with responsible operators"
+    ],
+    "notes": "Wind and marine seasons differ; check locally.",
+    "image": "/images/kitesurfing-kalpitiya.webp",
+    "displayName": "Kalpitiya"
+  }
+]

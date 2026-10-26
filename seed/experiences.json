@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Scenic Rail Journeys",
+    "slug": "scenic-rail-journeys",
+    "description": "Watch the hill country unfold from the train — mist, mountains and vivid green tea slopes.",
+    "category": "Hill Country",
+    "image": "/images/adam-vandermeer-dw9dwtzzsue-unsplash.webp"
+  },
+  {
+    "name": "Tea Country Encounters",
+    "slug": "tea-country-encounters",
+    "description": "Walk gently through the landscapes and traditions that shaped Ceylon tea.",
+    "category": "Culture",
+    "image": "/images/liptons-seat-haputale.webp"
+  },
+  {
+    "name": "The Wild Side",
+    "slug": "the-wild-side",
+    "description": "Safari landscapes, patient observation and a deeper appreciation of wildlife habitats.",
+    "category": "Wildlife",
+    "image": "/images/tom-paisley-v2zeizifb44-unsplash.webp"
+  },
+  {
+    "name": "Flavours of Sri Lanka",
+    "slug": "flavours-of-sri-lanka",
+    "description": "Markets, home-style recipes and the generous spirit of island cooking.",
+    "category": "Food & Culture",
+    "image": "/images/anthony-lim-h-qdqsxbbbc-unsplash.webp"
+  },
+  {
+    "name": "Ancient Stories",
+    "slug": "ancient-stories",
+    "description": "Sacred spaces and centuries-old craftsmanship told through remarkable places.",
+    "category": "Heritage",
+    "image": "/images/dambulla-cave-temple.webp"
+  },
+  {
+    "name": "Life by the Ocean",
+    "slug": "life-by-the-ocean",
+    "description": "Salt air, surfing and long afternoons beside the southern coast.",
+    "category": "Coastal",
+    "image": "/images/weligama.webp"
+  },
+  {
+    "name": "Waterfalls & Trails",
+    "slug": "waterfalls-trails",
+    "description": "Green valleys and mountain paths, carefully selected for your comfort and ability.",
+    "category": "Adventure",
+    "image": "/images/gerandigini-ella-waterfall.webp"
+  },
+  {
+    "name": "A Slower Island Rhythm",
+    "slug": "a-slower-island-rhythm",
+    "description": "Space to pause, reconnect and find your own pace on the island.",
+    "category": "Wellness",
+    "image": "/images/maris-silis-mbfjfqaceak-unsplash.webp"
+  }
+]
