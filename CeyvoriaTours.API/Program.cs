@@ -68,14 +68,18 @@ builder.Services.AddRateLimiter(o=>{
 });
 
 var app=builder.Build();
+app.UseForwardedHeaders(new ForwardedHeadersOptions{
+ ForwardedHeaders = Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders.XForwardedFor | Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders.XForwardedProto
+});
 app.UseExceptionHandler();
-if(app.Environment.IsDevelopment()){app.UseSwagger();app.UseSwaggerUI();}
-app.UseHttpsRedirection();
+app.UseSwagger();
+app.UseSwaggerUI();
 app.UseCors("frontend");
 app.UseRateLimiter();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapGet("/",()=>Results.Ok(new{status="ok",service="ceyvoria-api",message="Ceyvoria Tours API is live",timestamp=DateTime.UtcNow}));
 app.MapGet("/health",()=>Results.Ok(new{status="ok",service="ceyvoria-api"}));
 app.MapGet("/api/tours",async(CeyvoriaDb db,CancellationToken ct)=>{
  var list=await db.Tours.AsNoTracking().Where(x=>x.Published).OrderBy(x=>x.Title).ToListAsync(ct);
