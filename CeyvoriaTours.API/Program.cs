@@ -14,10 +14,10 @@ using Microsoft.IdentityModel.Tokens;
 
 var builder=WebApplication.CreateBuilder(args);
 
-var port=Environment.GetEnvironmentVariable("PORT");
-if(!string.IsNullOrEmpty(port)){
- builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
-}
+var port = Environment.GetEnvironmentVariable("PORT") 
+    ?? Environment.GetEnvironmentVariable("WEBSITES_PORT") 
+    ?? "8080";
+builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
 var connection = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? builder.Configuration["DefaultConnection"]
