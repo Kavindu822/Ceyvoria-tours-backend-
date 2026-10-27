@@ -19,10 +19,24 @@ if(!string.IsNullOrEmpty(port)){
  builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 }
 
-var connection=builder.Configuration.GetConnectionString("DefaultConnection");
-if(string.IsNullOrWhiteSpace(connection))throw new InvalidOperationException("Configure ConnectionStrings__DefaultConnection.");
-var secret=builder.Configuration["Jwt:Secret"]??"";
-if(Encoding.UTF8.GetByteCount(secret)<48)throw new InvalidOperationException("Jwt__Secret must be at least 48 bytes.");
+var connection = builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? builder.Configuration["DefaultConnection"]
+    ?? builder.Configuration["DATABASE_URL"]
+    ?? builder.Configuration["ConnectionStrings.DefaultConnection"]
+    ?? builder.Configuration["ConnectionStrings_DefaultConnection"];
+
+if(string.IsNullOrWhiteSpace(connection))throw new InvalidOperationException("Configure database connection string via DefaultConnection or ConnectionStrings__DefaultConnection.");
+
+var secret = builder.Configuration["Jwt:Secret"]
+    ?? builder.Configuration["Jwt_Secret"]
+    ?? builder.Configuration["JWT_SECRET"]
+    ?? "";
+
+if(Encoding.UTF8.GetByteCount(secret)<48)throw new InvalidOperationException("Jwt secret must be at least 48 bytes. Set Jwt:Secret or Jwt_Secret.");
+
+var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? builder.Configuration["Jwt_Issuer"] ?? "CeyvoriaTours";
+var jwtAudience = builder.Configuration["Jwt:Audience"] ?? builder.Configuration["Jwt_Audience"] ?? "CeyvoriaToursWebsite";
+
 builder.Services.AddDbContext<CeyvoriaDb>(o=>o.UseNpgsql(connection));
 builder.Services.AddScoped<IPasswordHasher<AppUser>,PasswordHasher<AppUser>>();
 builder.Services.AddEndpointsApiExplorer();
@@ -36,8 +50,8 @@ var allowedOrigins=rawOrigins?.Split(',',StringSplitOptions.RemoveEmptyEntries|S
 builder.Services.AddCors(o=>o.AddPolicy("frontend",p=>p.WithOrigins(allowedOrigins).AllowAnyHeader().AllowAnyMethod()));
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(o=>{
  o.TokenValidationParameters=new TokenValidationParameters{
-  ValidateIssuer=true,ValidIssuer=builder.Configuration["Jwt:Issuer"],
-  ValidateAudience=true,ValidAudience=builder.Configuration["Jwt:Audience"],
+  ValidateIssuer=true,ValidIssuer=jwtIssuer,
+  ValidateAudience=true,ValidAudience=jwtAudience,
   ValidateIssuerSigningKey=true,IssuerSigningKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret)),
   ValidateLifetime=true,ClockSkew=TimeSpan.FromMinutes(1)
  };
@@ -233,10 +247,13 @@ static IResult? Validate(object input){
  return Validator.TryValidateObject(input,new ValidationContext(input),errs,true)?null:Results.ValidationProblem(errs.SelectMany(x=>x.MemberNames.DefaultIfEmpty("general").Select(n=>(name:n,msg:x.ErrorMessage??"Invalid input"))).GroupBy(x=>x.name).ToDictionary(x=>x.Key,x=>x.Select(v=>v.msg).ToArray()));
 }
 static string Token(AppUser u,IConfiguration config){
- var key=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Jwt:Secret"]!));
+ var secret = config["Jwt:Secret"] ?? config["Jwt_Secret"] ?? config["JWT_SECRET"]!;
+ var key=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
  var credentials=new SigningCredentials(key,SecurityAlgorithms.HmacSha256);
  var claims=new[]{new Claim(ClaimTypes.NameIdentifier,u.Id.ToString()),new Claim(ClaimTypes.Email,u.Email),new Claim(ClaimTypes.Role,u.Role)};
- var jwt=new JwtSecurityToken(issuer:config["Jwt:Issuer"],audience:config["Jwt:Audience"],claims:claims,expires:DateTime.UtcNow.AddMinutes(20),signingCredentials:credentials);
+ var issuer = config["Jwt:Issuer"] ?? config["Jwt_Issuer"] ?? "CeyvoriaTours";
+ var audience = config["Jwt:Audience"] ?? config["Jwt_Audience"] ?? "CeyvoriaToursWebsite";
+ var jwt=new JwtSecurityToken(issuer:issuer,audience:audience,claims:claims,expires:DateTime.UtcNow.AddMinutes(20),signingCredentials:credentials);
  return new JwtSecurityTokenHandler().WriteToken(jwt);
 }
 public record BookingStatusRequest(string Status,string? AdminNotes);
