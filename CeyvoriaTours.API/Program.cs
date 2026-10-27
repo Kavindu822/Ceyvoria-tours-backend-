@@ -209,8 +209,8 @@ admin.MapPut("/messages/{id:guid}/status",async(Guid id,UpdateStatus input,Ceyvo
  x.Status=input.Status;await db.SaveChangesAsync(ct);return Ok(new{x.Id,x.Status});
 });
 
-if(app.Environment.IsDevelopment()){
- // Local development only: create schema without manual migration for preview; production requires migrations.
+var autoInit = app.Environment.IsDevelopment() || builder.Configuration.GetValue<bool>("AUTO_INIT_DB") || !string.IsNullOrWhiteSpace(builder.Configuration["ADMIN_BOOTSTRAP_PASSWORD"]);
+if (autoInit) {
  using var scope=app.Services.CreateScope();var db=scope.ServiceProvider.GetRequiredService<CeyvoriaDb>();
  await db.Database.EnsureCreatedAsync();await SeedData.SeedAsync(db);
  var adminEmail=builder.Configuration["ADMIN_BOOTSTRAP_EMAIL"];
@@ -219,7 +219,7 @@ if(app.Environment.IsDevelopment()){
   var u=new AppUser{Email=adminEmail.Trim().ToLowerInvariant(),FirstName="Admin",Role="Admin"};
   u.PasswordHash=scope.ServiceProvider.GetRequiredService<IPasswordHasher<AppUser>>().HashPassword(u,adminPass);
   db.Users.Add(u);await db.SaveChangesAsync();
-  app.Logger.LogWarning("Development administrator bootstrapped. Remove ADMIN_BOOTSTRAP_PASSWORD immediately.");
+  app.Logger.LogWarning("Administrator account bootstrapped successfully.");
  }
 }
 app.Run();
